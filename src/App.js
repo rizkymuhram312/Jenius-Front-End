@@ -1,18 +1,22 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import './App.css';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import "./App.css";
+import Header from "./components/Header";
+import Kontak from "./components/Kontak";
+import AddKontak from "./components/AddKontak";
+import EditKontak from "./components/EditKontak";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="bg-background">
-      <Header />
-      <div className="container mx-auto px-4 pt-40 lg:pt-20">
-        <Switch>
-          <Route path="/" component={Home} exact />
-         
-
-        </Switch>
-      </div>
+      <div className="bg-background w-full">
+        <Header />
+        <div className="container w-full mx-auto px-4 pt-2 lg:pt-5">
+          <Switch>
+            <Route path="/kontak" component={Kontak} exact />
+            <Route path="/addKontak" component={AddKontak} exact />
+            <Route path="/editKontak" component={EditKontak} exact />
+          </Switch>
+        </div>
       </div>
     </BrowserRouter>
   );
