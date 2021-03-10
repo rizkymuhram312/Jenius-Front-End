@@ -12,7 +12,7 @@ function App() {
         <Header />
         <div className="container w-full mx-auto px-4 pt-2 lg:pt-5">
           <Switch>
-            <Route path="/kontak" component={Kontak} exact />
+            <Route path="/" component={Kontak} exact />
             <Route path="/addKontak" component={AddKontak} exact />
             <Route path="/editKontak" component={EditKontak} exact />
           </Switch>
