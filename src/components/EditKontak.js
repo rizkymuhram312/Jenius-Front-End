@@ -56,11 +56,7 @@ export default function EditKontak() {
     setError("");
   };
 
-  const onChangePhoto = (e) => {
-    const value = e.target.value;
-    setPhoto(value);
-    setError("");
-  };
+
 
   const updateKontak = () => {
     const data = {

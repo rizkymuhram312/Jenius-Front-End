@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import apiURL from "../config/apiURL";
 import { useHistory } from "react-router";
 
@@ -30,11 +30,7 @@ export default function AddKontak() {
     setError("");
   };
 
-  const onChangePhoto = (e) => {
-    const value = e.target.value;
-    setPhoto(value);
-    setError("");
-  };
+  
 
   const tambahKontak = () => {
     const data = {
