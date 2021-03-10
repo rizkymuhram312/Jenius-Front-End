@@ -8,7 +8,7 @@ import EditKontak from "./components/EditKontak";
 function App() {
   return (
     <BrowserRouter>
-      <div className="bg-background w-full">
+      <div className="bg-blue-100 w-full">
         <Header />
         <div className="container w-full mx-auto px-4 pt-2 lg:pt-5">
           <Switch>

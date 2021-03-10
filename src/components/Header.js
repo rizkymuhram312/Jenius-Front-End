@@ -3,7 +3,7 @@ import React from "react";
 export default function Header() {
   return (
     <div>
-      <nav class="flex items-center justify-between flex-wrap bg-teal p-6">
+      <nav class="flex items-center justify-between flex-wrap bg-blue-200 p-6">
         <div class="flex items-center flex-no-shrink text-white mr-6">
           <img
             class="h-10"

@@ -41,18 +41,18 @@ export default function Kontak() {
     // </div>
 
     <div class="w-full  mb-12 xl:mb-0 px-4">
-      <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
-        <div class="rounded-t mb-0 px-4 py-3 border-0">
+      <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded bg-blue-400">
+        <div class="rounded-t mb-0 px-4 py-3 border-0 bg-blue-500">
           <div class="flex flex-wrap items-center">
-            <div class="relative w-full px-4 max-w-full flex-grow flex-1">
-              <h3 class="font-semibold text-base text-gray-800">
+            <div class="relative w-full px-4 max-w-full flex-grow flex-1 ">
+              <h3 class="font-semibold text-xl text-blue-50">
                 List Contact
               </h3>
             </div>
             <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
               <button
                 onClick={inputKontak}
-                className="px-6 bg-gray-100 text-gray-600 align-middle border border-solid border-gray-200 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-no-wrap font-semibold text-left"
+                className="px-6 bg-blue-700 text-blue-50 align-middle border border-solid border-blue-800 hover:bg-blue-200 hover:text-blue-800 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-no-wrap font-semibold text-left"
                 type="button"
               >
                 Add Contact
@@ -61,13 +61,13 @@ export default function Kontak() {
           </div>
         </div>
         <div class="block w-full overflow-x-auto">
-          <div class="container my-12 mx-auto px-4 md:px-12">
+          <div class="container my-4 mx-auto px-4 md:px-12">
             <div class="flex flex-wrap -mx-1 lg:-mx-4">
               {kontak.data ? (
                 kontak.data.map((x, index) => {
                   return (
                     <div class="my-1 px-1 w-full md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4">
-                      <article class="overflow-hidden rounded-lg shadow-lg bg-blue-200">
+                      <article class="overflow-hidden rounded-lg shadow-lg bg-blue-100">
                         <a class="flex items-center" href="#">
                           <img
                             alt="Placeholder"
@@ -91,7 +91,7 @@ export default function Kontak() {
                         <footer class="flex items-center justify-between leading-none p-2 md:p-4">
                           <button
                             onClick={() => editKontak(x.id)}
-                            className="text-gray-600 bg-transparent border border-solid border-gray-300 hover:bg-gray-600 hover:text-white active:bg-blue-600 font-bold uppercase text-xs px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                            className="text-blue-50 bg-transparent w-20 bg-blue-400 border border-solid border-gray-300 hover:bg-blue-600 hover:text-white active:bg-blue-600 font-bold uppercase text-xs px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                             type="button"
                           >
                             Edit
@@ -107,7 +107,7 @@ export default function Kontak() {
                                 deleteKontak(x.id);
                               }
                             }}
-                            className="text-gray-600 bg-transparent border border-solid border-gray-300 hover:bg-gray-600 hover:text-white active:bg-blue-600 font-bold uppercase text-xs px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                            className="text-blue-50 w-20 bg-transparent bg-blue-400 border border-solid border-gray-300 hover:bg-blue-600 hover:text-white active:bg-blue-600 font-bold uppercase text-xs px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                             type="button"
                           >
                             Delete

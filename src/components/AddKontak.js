@@ -62,6 +62,10 @@ export default function AddKontak() {
       });
   };
 
+  const batal = () => {
+    history.push("/");
+  };
+
   return (
     <>
       <div className="relative py-1 sm:max-w-xl mx-auto text-center">
@@ -150,9 +154,16 @@ export default function AddKontak() {
             {/* <Upload  /> */}
           </div>
         </div>
-        <div className="flex justify-center items-baseline">
+        <div className="flex justify-center items-baseline ">
+        <button
+            className="mt-4 bg-red-500 mx-10 w-32 text-white py-2 px-6 rounded-lg flex justify-center items-baseline"
+            values="batal"
+            onClick={batal}
+          >
+            Batal
+          </button>
           <button
-            className="mt-4 bg-indigo-500 text-white py-2 px-6 rounded-lg flex justify-center items-baseline"
+            className="mt-4 bg-indigo-500 mx-10 w-40 text-white py-2 px-6 rounded-lg flex justify-center items-baseline"
             values="tambahKontak"
             onClick={tambahKontak}
           >
