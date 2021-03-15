@@ -50,7 +50,7 @@ export default function AddKontak() {
             setAge("");
             setPhoto("");
             setAlert(result.data.message);
-            history.push("/kontak");
+            history.push("/");
             setTimeout(() => {
               setAlert("");
             }, 2500);
