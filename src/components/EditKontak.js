@@ -78,7 +78,7 @@ export default function EditKontak() {
             setPhoto("");
             setAlert(result.data.message);
             localStorage.clear();
-            history.push("/kontak");
+            history.push("/");
             setTimeout(() => {
               setAlert("");
             }, 2500);
